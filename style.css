@@ -1,0 +1,289 @@
+/* Apply a natural box layout model to all elements. 
+Padding and border will not affect the width. */
+* { 
+ 	-moz-box-sizing: border-box; 
+ 	-webkit-box-sizing: border-box; 
+ 	box-sizing: border-box; 
+}
+
+
+body {
+	/* remove default spaces */
+	padding: 0;
+	margin: 0;
+	/* setting common type styles */
+	font-family: 'OpenSansLight', Arial, sans-serif;
+	color: #9db0ac;
+	background: #FFF;
+}
+/* remove defaults */
+h1, h2, h3 {
+	margin: 0;
+	font-weight: normal;
+	color: #000;
+}
+
+/* reset lists */
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+a {
+	/* override default styles */
+	text-decoration: none;
+	outline: none; /* removes dotted border from Firefox */
+	color: #9db0ac;
+}
+a:hover {
+	color: #d9a50c;
+}
+
+p {
+	margin: 0;
+}
+
+/*media queries*/
+@media (min-width: 1224px) {
+	.title {
+		margin: 20px 20px;
+		padding: 20px 20px;
+	}
+
+	.title h1 {
+		font-size: 65px;
+
+	}
+
+	.menu {
+		padding: 20px 20px;
+		margin-top: -60px;
+	}
+	.menu li {
+		display: inline-block;
+		padding: 20px 20px;
+	}
+	.menu li a {
+		font-size: 25px;
+	}
+
+	.cut {
+		width: 33%;
+		display: inline-block;
+	}
+
+	.shave {
+		width: 33%;
+		display: inline-block;
+	}
+
+	.cutShave {
+		width: 33%;
+		display: inline-block;
+	}
+
+	.price h2 {
+		font-size: 25px;
+	}
+
+	.video {
+		margin: 20px 20px;
+	}
+
+	.info {
+		width: 33%;
+		display: inline-block;
+		padding: 50px 50px;
+	}
+
+	.hours {
+		width: 33%;
+		display: inline-block;
+		padding: 50px 50px;
+
+	}
+
+	.apts {
+		width: 33%;
+		display: inline-block;
+		padding: 50px 50px;
+	}
+
+	.boxes h2 {
+		font-size: 35px;
+	}
+
+	.boxes p {
+		font-size: 15px;
+	}
+
+	.footer {
+		padding: 20px 20px;
+		margin: 20px 20px;
+	}
+
+	.innerFooter {
+		padding: 20px 20px;
+		margin: 20px 20px;
+	}
+
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+}
+
+/* Landscape phones and down */
+@media (min-device-width : 320px) and (max-width: 480px) {
+
+	.title {
+		margin: 20px 20px;
+		padding: 20px 20px;
+	}
+
+	.title h1 {
+		font-size: 45px;
+
+	}
+
+	.menu {
+		padding: 20px 20px;
+		margin: 20px 20px;
+	}
+
+	.menu li a {
+		font-size: 25px;
+		line-height: 55px;
+	}
+
+	.video {
+		margin: 20px 20px;
+	}
+
+	.cut {
+		margin: 50px 50px;
+	}
+
+	.shave {
+		margin: 50px 50px;
+	}
+
+	.cutShave {
+		margin: 50px 50px;
+	}
+
+	.price h2 {
+		font-size: 25px;
+	}
+
+	.info {
+		padding: 20px 20px;
+	}
+
+	.hours {
+		padding: 20px 20px;
+	}
+
+	.apts {
+		padding: 20px 20px;
+	}
+
+	.boxes h2 {
+		font-size: 40px;
+	}
+
+	.boxes p {
+		font-size: 20px;
+	}
+
+	.footer {
+		padding: 20px 20px;
+		margin: 20px 20px;
+	}
+
+	.innerFooter {
+		padding: 20px 20px;
+		margin: 20px 20px;
+	}
+
+
+
+}
+
+/*desktop styling*/
+
+.title {
+	text-align: center;
+	text-transform: uppercase;
+	/*border: 1px solid red;*/
+}
+
+.title h1 {
+	font-family: 'Special Elite', cursive;
+}
+
+.menu {
+	/*border: 1px solid blue;*/
+	text-align: center;
+}
+
+.menu li {
+	font-family: 'Permanent Marker', cursive;
+}
+
+.menu li a {
+	color: #000;
+}
+
+.menu li a:hover {
+	font-size: 30px;
+}
+
+.container {
+	text-align: center;
+}
+
+.price h2 {
+	font-family: 'Special Elite', cursive;
+}
+
+.video {
+	/*border: 1px solid green;*/
+	text-align: center;
+}
+
+.video iframe {
+	max-width: 100%;
+}
+
+.gmap {
+	text-align: center;
+}
+
+.gmap iframe {
+	max-width: 100%;
+}
+
+.boxes {
+	text-align: center;
+	font-family: 'Special Elite', cursive;
+	color: #000;
+	/*border: 1px solid green;*/
+}
+
+.apts span {
+	color: #F5003D;
+	font-size: 20px;
+}
+
+.footer {
+	text-align: center;
+	/*border: 1px solid purple;*/
+}
+
